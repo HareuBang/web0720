@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+/* 1. width값 설정 - margin: auto 가운데 정렬 (View 좌우 넓이 - width값 = 좌우 여백)*/
+  width: 300px;
+  margin: auto;
+  
+  border: 1px solid red;
+}
+
+span {
+/* margin-top 값이 반영되지 않는 이유는? 
+	inline 요소의 특징
+		위 아래 margin 적용 x
+		
+	해결방법
+		1. display: block;
+		2. display: inline-block;
+*/
+	margin-top: 100px;
+	border: 1px solid green;
+}
+/* 추가로 box-sizing: content-box; border-box가 있는 데 둘의 차이점을 알아보자. */
+</style>
+</head>
+<body>
+
+<h2>Use of margin: auto</h2>
+<p>You can set the margin property to auto to horizontally center the element within its container. The element will then take up the specified width, and the remaining space will be split equally between the left and right margins:</p>
+
+<div>
+This div will be horizontally centered because it has margin: auto;
+</div>
+
+<span>
+This span will be horizontally centered because it has margin: auto;
+</span>
+
+</body>
+</html>

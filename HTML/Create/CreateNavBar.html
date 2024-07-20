@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nav bar</title>
+	<style>
+		ul {
+			list-style-type: none;
+			background-color: #333;
+			
+			/* 초기화 목적 */
+			margin: 0;
+			padding: 0;
+			/* 부모 요소의 높이가 자식 요소의 높이에 따라 동적으로 조정 되는 것을 방지 
+			float를 가진 자식 요소들이 부모 요소의 영역을 벗어나지 않도록 한다. */
+			overflow: hidden;
+		}
+		
+		li {
+			/* 수평 정렬 */
+			float: left;
+		}
+		
+		li a {
+			color: #fff;
+			text-align: center;
+			text-decoration: none;
+			
+			/* padding 값을 위 아래 적용하기 위해서 */
+			padding: 16px;
+			display: block;
+		}
+		
+		li a:hover {
+			background-color: #111;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li><a href="#home">Home</a></li>
+		<li><a href="#News">News</a></li>
+		<li><a href="#Contact">Contact</a></li>
+		<li><a href="#About">About</a></li>
+	</ul>
+</body>
+</html>

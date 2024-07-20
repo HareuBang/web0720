@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+		<!-- .city 수평 정렬 하는 방법은? -->
+			body {
+				float: left;
+			}
+			
+			.city {
+				background-color: tomato;
+				color: white;
+				
+				<!-- inline 요소 padding 속성은 좌우만 적용된다고 했는 데 
+				위 아래에도 적용이 된다.-->
+				padding: 50px;
+				
+				<!-- margin 속성은 좌우만 적용 확인. -->
+				margin: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="city">Paris</div>
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		
+		<span class="city">London</span>
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		
+		<!-- div span 다음 줄 시작. -->
+		<div> This is div Tag. </div>
+		<span> This is span Tag. </span>
+	</body>
+	
+</html>

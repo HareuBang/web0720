@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  height: 50px;
+  width: 100%;
+  border: 1px solid #4CAF50;
+  
+  /* border-content(padding 값 변하지 않지만) 글자를 중앙에 위치시키는 방법은? 
+		텍스트를 수직 가운데 정렬하는 방법
+			1. line-height: 50px; (div height 값과 동일하게)
+			2. Flexbox
+					display: flex;
+					justify-content: center; (수평 중앙 정렬)
+					align-items: center; (수직 중앙 정렬)
+			3. Grid
+					display: grid;
+					place-items: center (수평 수직 가운데 정렬)
+					
+		주로 텍스트 수직 정렬을 위해서는 1, 2를 사용하는 것이 일반적인 선택.
+  */
+  text-align: center;
+
+}
+</style>
+</head>
+<body>
+
+<h2>CSS height and width properties</h2>
+
+<div>This div element has a height of 50 pixels and a width of 100%.</div>
+
+</body>
+</html>
